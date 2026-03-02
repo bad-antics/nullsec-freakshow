@@ -2,17 +2,18 @@ from setuptools import setup, find_packages
 
 setup(
     name="nullsec-freakshow",
-    version="2.0.0",
-    description="🎪 The Freakshow Suite — 30 Weird & Creepy Security Tools",
+    version="3.0.0",
+    description="🎪 The Freakshow Suite — 40 Weird & Creepy Security Tools in 9 Languages",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="bad-antics",
     author_email="nullsec@proton.me",
-    url="https://github.com/bad-antics/nullsec",
+    url="https://github.com/bad-antics/nullsec-freakshow",
     packages=find_packages(),
-    python_requires=">=3.8",
+    python_requires=">=3.10",
     install_requires=[
         "click>=8.0",
+        # Python tools (pip-installable)
         "nullsec-sigil>=1.0.0",
         "nullsec-dead-drop>=1.0.0",
         "nullsec-miasma>=1.0.0",
@@ -43,6 +44,10 @@ setup(
         "nullsec-shade>=1.0.0",
         "nullsec-djinn>=1.0.0",
         "nullsec-mothman>=1.0.0",
+        "nullsec-yokai>=1.0.0",
+        # Non-Python tools (wraith, banshee, poltergeist, kobold,
+        # specter, changeling, familiar, golem, phantom) require
+        # their respective compilers/runtimes — see README.
     ],
     entry_points={
         "console_scripts": [

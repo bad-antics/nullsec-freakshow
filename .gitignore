@@ -27,3 +27,11 @@ Thumbs.db
 # Packaging
 *.tar.gz
 *.whl
+
+# Build artifacts
+*/target/
+nullsec-golem/golem
+nullsec-poltergeist/poltergeist
+nullsec-wraith/wraith
+*.o
+*.d

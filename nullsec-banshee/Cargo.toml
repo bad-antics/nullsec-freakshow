@@ -1,0 +1,11 @@
+[package]
+name = "nullsec-banshee"
+version = "1.0.0"
+edition = "2021"
+authors = ["bad-antics <nullsec@proton.me>"]
+description = "File integrity screamer — wails when files change"
+license = "MIT"
+
+[[bin]]
+name = "banshee"
+path = "src/main.rs"

@@ -1,0 +1,9 @@
+{
+  "name": "nullsec-kobold",
+  "version": "1.0.0",
+  "description": "HTTP header security auditor — the kobold inspects your defenses",
+  "author": "bad-antics <nullsec@proton.me>",
+  "license": "MIT",
+  "bin": { "kobold": "./kobold.js" },
+  "engines": { "node": ">=16" }
+}
