@@ -1,15 +1,16 @@
 """
 🎪 nullsec-freakshow — The Freakshow Suite
 40 weird & creepy security tools by bad-antics.
+9 non-Python tools also have Python fallback ports.
 """
-__version__ = "3.0.0"
+__version__ = "3.1.0"
 __author__ = "bad-antics"
 
 TOOLS = [
     # ── Original 20 (Python) ──
     {"name": "sigil",        "package": "nullsec-sigil",        "emoji": "🔮", "lang": "Python", "desc": "Visual hash fingerprinting"},
-    {"name": "dead-drop",    "package": "nullsec-dead-drop",    "emoji": "📦", "lang": "Python", "desc": "LSB steganography"},
-    {"name": "miasma",       "package": "nullsec-miasma",       "emoji": "��", "lang": "Python", "desc": "Shannon entropy analyzer"},
+    {"name": "dead-drop",    "package": "nullsec-dead-drop",    "emoji": "��", "lang": "Python", "desc": "LSB steganography"},
+    {"name": "miasma",       "package": "nullsec-miasma",       "emoji": "🌫️", "lang": "Python", "desc": "Shannon entropy analyzer"},
     {"name": "temporal",     "package": "nullsec-temporal",     "emoji": "⏰", "lang": "Python", "desc": "Forensic timestamp analyzer"},
     {"name": "hexspeak",     "package": "nullsec-hexspeak",     "emoji": "🔢", "lang": "Python", "desc": "Hex word encoder/decoder"},
     {"name": "whisper",      "package": "nullsec-whisper",      "emoji": "👁️", "lang": "Python", "desc": "Spectral audio steganography"},
@@ -38,17 +39,17 @@ TOOLS = [
     {"name": "shade",       "package": "nullsec-shade",       "emoji": "🌑", "lang": "Python", "desc": "File permission anomaly hunter"},
     {"name": "djinn",       "package": "nullsec-djinn",       "emoji": "🧞", "lang": "Python", "desc": "Container escape surface analyzer"},
     {"name": "mothman",     "package": "nullsec-mothman",     "emoji": "🦇", "lang": "Python", "desc": "Network promiscuity & ARP detector"},
-    # ── Wave 3: 10 multi-language ──
-    {"name": "wraith",      "package": "nullsec-wraith",      "emoji": "👻", "lang": "Go",     "desc": "Ephemeral port scanner"},
-    {"name": "banshee",     "package": "nullsec-banshee",     "emoji": "💀", "lang": "Rust",   "desc": "File integrity screamer"},
-    {"name": "poltergeist", "package": "nullsec-poltergeist", "emoji": "👻", "lang": "C",      "desc": "/proc anomaly detector"},
-    {"name": "kobold",      "package": "nullsec-kobold",      "emoji": "🔧", "lang": "Node.js","desc": "HTTP header security auditor"},
-    {"name": "specter",     "package": "nullsec-specter",     "emoji": "👁️", "lang": "Bash",   "desc": "SSH config & key auditor"},
-    {"name": "changeling",  "package": "nullsec-changeling",  "emoji": "🎭", "lang": "Ruby",   "desc": "Git repository secrets scanner"},
-    {"name": "familiar",    "package": "nullsec-familiar",    "emoji": "🐈", "lang": "Perl",   "desc": "Log pattern extractor"},
-    {"name": "golem",       "package": "nullsec-golem",       "emoji": "🗿", "lang": "C++",    "desc": "Memory-mapped file hasher"},
-    {"name": "phantom",     "package": "nullsec-phantom",     "emoji": "👻", "lang": "PHP",    "desc": "Web shell detector"},
-    {"name": "yokai",       "package": "nullsec-yokai",       "emoji": "🏮", "lang": "Python", "desc": "Cron & systemd timer auditor"},
+    # ── Wave 3: 10 multi-language (with Python fallback ports) ──
+    {"name": "wraith",      "package": "nullsec-wraith",      "emoji": "👻", "lang": "Go",      "desc": "Ephemeral port scanner",          "py_cmd": "wraith-py"},
+    {"name": "banshee",     "package": "nullsec-banshee",     "emoji": "💀", "lang": "Rust",    "desc": "File integrity screamer",         "py_cmd": "banshee-py"},
+    {"name": "poltergeist", "package": "nullsec-poltergeist", "emoji": "👻", "lang": "C",       "desc": "/proc anomaly detector",          "py_cmd": "poltergeist-py"},
+    {"name": "kobold",      "package": "nullsec-kobold",      "emoji": "🔧", "lang": "Node.js", "desc": "HTTP header security auditor",    "py_cmd": "kobold-py"},
+    {"name": "specter",     "package": "nullsec-specter",     "emoji": "👁️", "lang": "Bash",    "desc": "SSH config & key auditor",        "py_cmd": "specter-py"},
+    {"name": "changeling",  "package": "nullsec-changeling",  "emoji": "🎭", "lang": "Ruby",    "desc": "Git repository secrets scanner",  "py_cmd": "changeling-py"},
+    {"name": "familiar",    "package": "nullsec-familiar",    "emoji": "🐈", "lang": "Perl",    "desc": "Log pattern extractor",           "py_cmd": "familiar-py"},
+    {"name": "golem",       "package": "nullsec-golem",       "emoji": "🗿", "lang": "C++",     "desc": "Memory-mapped file hasher",       "py_cmd": "golem-py"},
+    {"name": "phantom",     "package": "nullsec-phantom",     "emoji": "👻", "lang": "PHP",     "desc": "Web shell detector",              "py_cmd": "phantom-py"},
+    {"name": "yokai",       "package": "nullsec-yokai",       "emoji": "🏮", "lang": "Python",  "desc": "Cron & systemd timer auditor"},
 ]
 
 __all__ = ["TOOLS"]

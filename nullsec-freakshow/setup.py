@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="nullsec-freakshow",
-    version="3.0.0",
-    description="🎪 The Freakshow Suite — 40 Weird & Creepy Security Tools in 9 Languages",
+    version="3.1.0",
+    description="🎪 The Freakshow Suite — 40 Weird & Creepy Security Tools in 9 Languages + Python Fallback Ports",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="bad-antics",
@@ -13,7 +13,7 @@ setup(
     python_requires=">=3.10",
     install_requires=[
         "click>=8.0",
-        # Python tools (pip-installable)
+        # ── Python tools (pip-installable) ──
         "nullsec-sigil>=1.0.0",
         "nullsec-dead-drop>=1.0.0",
         "nullsec-miasma>=1.0.0",
@@ -45,9 +45,19 @@ setup(
         "nullsec-djinn>=1.0.0",
         "nullsec-mothman>=1.0.0",
         "nullsec-yokai>=1.0.0",
-        # Non-Python tools (wraith, banshee, poltergeist, kobold,
-        # specter, changeling, familiar, golem, phantom) require
-        # their respective compilers/runtimes — see README.
+        # ── Python fallback ports for multi-language tools ──
+        "nullsec-wraith-py>=1.0.0",
+        "nullsec-banshee-py>=1.0.0",
+        "nullsec-poltergeist-py>=1.0.0",
+        "nullsec-kobold-py>=1.0.0",
+        "nullsec-specter-py>=1.0.0",
+        "nullsec-changeling-py>=1.0.0",
+        "nullsec-familiar-py>=1.0.0",
+        "nullsec-golem-py>=1.0.0",
+        "nullsec-phantom-py>=1.0.0",
+        # Non-Python native tools (wraith, banshee, poltergeist, kobold,
+        # specter, changeling, familiar, golem, phantom) require their
+        # respective compilers/runtimes — see README.
     ],
     entry_points={
         "console_scripts": [
